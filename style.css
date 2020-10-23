@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: x-large;
+    background-color:rebeccapurple;
+    color: white;    
+}
+.gamearea{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-color:rebeccapurple;
+    padding: 20px;
+}
+.tile{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    transition:background 0.2s ease-in-out;
+
+}
+.tile:hover{
+    cursor: pointer;
+    background-color:coral;
+}
+.occupied:hover{
+    background-color: lightgrey;
+}
+button:hover{
+    cursor: pointer;
+    background:crimson;
+    color:whitesmoke;
+}
+button{
+    outline: none;
+  border: 4px solid crimson;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+.pl1{
+    color: darkblue;
+}
+.pl2{
+    color: greenyellow;
+}
+.checked{
+
+}
+#winner{
+    padding: 5px;
+    height:2vh;
+}
+#reset{
+margin: 7vh;
+height: 6vh;
+}
